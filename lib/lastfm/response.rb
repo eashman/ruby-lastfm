@@ -6,6 +6,7 @@ class Lastfm
     attr_reader :xml
 
     def initialize(body)
+      puts body
       # workaround for https://github.com/youpy/ruby-lastfm/issues/83
       body = fix_body(body)
 
