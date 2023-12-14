@@ -115,7 +115,6 @@ class Lastfm
       HTTPRequest.send(*request_args)
     end
 
-    puts response.inpect
     response = Response.new(response.body)
     unless response.success?
       raise ApiError.new(response.message, response.error)
